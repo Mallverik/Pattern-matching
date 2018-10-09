@@ -9,14 +9,16 @@ namespace ConsoleApp1
 
     class FirstException : Exception
     {
-        public FirstException(string message)
+        public FirstException(string message) : base(message)
         {
+            return;
         }
     }
     class SecondException : Exception
     {
         public SecondException(string message)
         {
+            return ;
         }
     }
 
